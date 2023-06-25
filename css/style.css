@@ -1,0 +1,225 @@
+/* basic styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* styling for container */
+
+.container {
+    margin: auto;
+    padding: 24px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+}
+
+/* styling for heading goes here */
+
+.container-col-heading {
+    background-color: #DEDEDE;
+    color: #000000;
+    padding: 8px 16px;
+    text-align: left;
+    display: inline-block;
+    border-radius: 8px;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.container-col-heading-text-top {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#211919, #D21919);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container-col-heading-text-bottom {
+    font-size: 18px;
+}
+
+.container-profile-img-1 {
+    width: 180px;
+    height: 400px;
+    background-image: url(https://media.discordapp.net/attachments/743706114801139785/1122454417581539358/IMG_0031.jpg?width=541&height=541);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.container-profile-details-bio {
+    background-color: #404040;
+    color: #BFBFBF;
+    padding: 8px 16px;
+    text-align: left;
+    display: inline-block;
+    border-radius: 8px;
+    line-height: 1;
+    margin-bottom: 8px;
+    margin: 0px 12px 12px;
+}
+
+.container-profile-details-bio-name {
+    font-size: 48px;
+}
+
+.container-profile-details-bio-content {
+    font-size: 18px;
+}
+
+.container-profile-details-stat {
+    background-color: #DEDEDE;
+    color: #000;
+    padding: 8px 16px;
+    text-align: left;
+    border-radius: 8px;
+    line-height: 1;
+    margin-bottom: 8px;
+    margin: 0px 12px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 200px;
+}
+
+.container-profile-details-stat-value {
+    font-size: 60px;
+}
+
+.container-profile-details-stat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 360px;
+}
+
+.container-profile-details-stat-vertical {
+    flex-direction: column;
+}
+
+.container-profile-images-top {
+    width: 300px;
+    height: 400px;
+    background-image: url(https://media.discordapp.net/attachments/743706114801139785/1122454417317302302/IMG_0037.jpg?width=944&height=496);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.container-profile-images-bottom {
+    width: 300px;
+    height: 120px;
+    background-image: url(https://media.discordapp.net/attachments/743706114801139785/1122454417019510814/IMG_0032.jpg?width=944&height=531);
+    background-size: cover;
+    background-position: top;
+    border-radius: 10px;
+    margin: 10px 0;
+    filter: grayscale(1);
+}
+
+.container-profile {
+    display: flex;
+}
+
+.container-profile-details-bio-1 , .container-profile-details-bio-2 {
+    width: 420px;
+}
+
+.container-profile-details-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: flex-end;
+}
+
+.container-col-heading-2 {
+    margin: 0px 12px 12px;
+}
+
+.container-col-2 {
+    margin-left: -12%;
+}
+
+@media only screen and (max-width:1250px){
+    .container-col-heading-text-top {
+        font-size: 60px;
+    }
+    .container-profile-details-bio-name {
+        font-size: 36px;
+    }
+    .container-profile-details-bio-1, .container-profile-details-bio-2 {
+        width: 330px;
+    }
+    .container-profile-details-stat-value {
+        font-size: 48px;
+    }
+    .container-profile-details-stat {
+        max-width: 180px;
+    }
+}
+
+@media only screen and (max-width:1080px){
+    .container-profile-img-1 {
+        width: 160px;
+        height: 350px;
+    }
+    .container-profile-images-top {
+        width: 260px;
+        height: 350px;
+    }
+    .container-profile-images-bottom {
+        width: 240px;
+    }
+    .container-col-heading-text-top {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (max-width:1010px){
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:700px){
+    .container-col-heading {
+        margin: 16px auto;
+        display: block;
+        text-align: center;
+    }
+    .container-profile {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-profile-img-1 {
+        max-width: 260px;
+        width: 260px;
+        height: 350px;        
+        margin: 16px auto;
+    }
+    .container-profile-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-profile-details-stat {
+        max-width: 100%;
+    }
+    .container-col-2 {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .container-col-1 {
+        margin-bottom: 20px;
+    }
+    .container-profile-details-bio-1, .container-profile-details-bio-2 {
+        width: auto;
+        text-align: center;
+    }
+}
