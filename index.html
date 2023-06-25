@@ -3,7 +3,52 @@
 <head>
   <title>Battle of the Thompson Twins</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
-  
+  <style>
+    body {
+      background-color: #f8f8f8;
+    }
+
+    nav {
+      background-color: black;
+      color: white;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      padding: 5px;
+    }
+
+    .landing-page {
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    .animation {
+      animation: slide-in 2s;
+    }
+
+    @keyframes slide-in {
+      0% {
+        opacity: 0;
+        transform: translateY(-100px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
 </head>
 <body>
