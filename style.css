@@ -1,4 +1,7 @@
-  background-color: #f8f8f8;
+<style>
+    body {
+      background-color: #f8f8f8;
+    }
 
     nav {
       background-color: black;
@@ -41,3 +44,4 @@
         transform: translateY(0);
       }
     }
+
